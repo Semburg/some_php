@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+
+/* SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+header,
+main,
+footer,
+section,
+article,
+#wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* HEADER STYLES */
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/assets/img/1.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    /* background-color: #cccccc; */
+}
+
+
+
+.logo {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+}
+
+.open-btn {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    width: 60px;
+    height: 60px;
+    color: rgb(148, 147, 147);
+    background: transparent;
+    outline: none;
+}
+
+.open-btn:hover {
+    cursor: pointer;
+}
+
+#nav_groups {
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    right: -30%;
+    background-color: #000;
+    transition: all .3s linear;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.group h2{
+    text-align: center;
+}
+
+.nav_list_wrapper{
+    width: 50%;
+}
+
+
+
+#nav_groups h2 {
+    color: wheat;
+}
+#nav_groups a{
+    color: #fff;
+    transition: .3s linear;
+}
+
+#nav_groups a:hover{
+    color: rgb(136, 134, 134);
+}
+
+#nav_groups.show {
+    right: 0%;
+}
+
+
+
+#nav_header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.close-btn {
+    opacity: 0.4;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    width: 60px;
+    height: 60px;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+/* WELCOME SECTION STYLES */
+
+#welcome {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#welcome h2 {
+    font-size: 48px;
+}
+
+.welcome_a {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome_a .img {
+    display: inline-block;
+    width: 700px;
+    height: 700px;
+    background: url("https://semburg.github.io/testarbeit/assets/img/2.jpg") center/cover no-repeat;
+}
+
+.welcome_a .text {
+    display: inline-block;
+    width: 700px;
+    text-align: left;
+}
+
+.second .img {
+    background: url("https://semburg.github.io/testarbeit/assets/img/3.jpg") center/cover no-repeat;
+    margin-bottom: 10rem;
+}
+
+
+/* Green image und News */
+
+
+#second_part {
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: rgb(153, 163, 221);
+    background: url("https://semburg.github.io/testarbeit/assets/img/4.jpg") center/cover no-repeat;
+}
+
+
+.not_paralax {
+    position: relative;
+    width: 100vw;
+    height: 800px;
+}
+
+#thinking_text {
+    width: 360px;
+    height: 160px;
+    position: absolute;
+    top: 12rem;
+    right: 12rem;
+}
+
+#news h2,
+#wrapper_news_line {
+    padding-left: 10px;
+}
+
+#wrapper_news_line {
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+    height: 740px;
+}
+
+.news_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 640px;
+    width: 320px;
+
+}
+
+.news_item:nth-child(even) {
+    align-self: flex-end;
+}
+
+#wrapper_news_line .news_img {
+    height: 320px;
+    width: 320px;
+    background: url("https://semburg.github.io/testarbeit/assets/img/5.jpg") center/cover no-repeat;
+}
+
+.pub_date {
+    color: #79AEBA;
+}
+
+.button_info {
+    padding: 5px 25px;
+
+    color: wheat;
+    background: #000;
+    /* border: 1px blue solid; */
+}
+
+#wrapper_news_line .news_img.second {
+    background: url("https://semburg.github.io/testarbeit/assets/img/6.jpg") center/cover no-repeat;
+}
+
+#wrapper_news_line .news_img.third {
+    background: url("https://semburg.github.io/testarbeit/assets/img/7.jpg") center/cover no-repeat;
+}
+
+#wrapper_news_line .news_img.fourth {
+    background: url("https://semburg.github.io/testarbeit/assets/img/8.jpg") center/cover no-repeat;
+}
+
+
+
+/* VISION + next IMAGE + Form */
+
+.vision {
+    width: 100vw;
+}
+
+.vision h2 {
+    padding-left: 10px;
+
+}
+
+.vision_img {
+    width: 95%;
+    height: 780px;
+    margin: 0 auto;
+    background: url("https://semburg.github.io/testarbeit/assets/img/9.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.playbeck_button {
+    position: relative;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 50.5px;
+    border-color: transparent transparent transparent #000;
+    position: absolute;
+    top: 65px;
+    left: 73px;
+}
+
+
+form {
+    width: 80%;
+    margin: 10rem auto;
+
+    
+}
+
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.user-data {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-message {
+    width: 30%;
+
+}
+.radio_wrapper{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+input, select, label, textarea  {
+    font-size: 20px;
+    width: 100%;
+}
+
+input[type=radio] {
+    width: 20px;
+    margin: 0;
+    margin-right: 4rem;
+}
+
+.button_wrapper{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTON */
+#submit_form {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 7px;  
+    border:none; 
+    transition: all .3s linear;
+}
+#submit_form:hover{ 
+    background: rgb(126, 124, 124); 
+    cursor: pointer;
+}
+
+#submit_form:active{ 
+    transform: scale(0.98);
+}
+
+
+/*   FOOTER */
+
+footer{
+    position: relative;
+}
+
+
+.first_line_footer {
+    width: 70%;
+    margin: 10rem auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+
+footer p {
+    font-size: 14px;
+}
+
+
+.nav_footer a{
+    font-size: 16px;
+
+}
+
+.nav_footer ul li {
+    display: inline-block;
+    padding-right: 15px;
+    
+}
+
+.nav_footer ul li a:hover{
+    color: rgb(121, 118, 118);
+}
+
+
+
+.oneliner{
+    width: 70%;
+    width: 70%;
+    margin: 10rem auto;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.land_infos p {
+    margin: 0;
+}
+
+footer img{
+    position: absolute;
+    bottom: -3rem;
+    left: 3rem;
+}
+
+#linkedin {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: -20px;
+    right: 40vw;
+}
+#linkedin img {
+    width: 30px;
+    height: 30px;
+}
